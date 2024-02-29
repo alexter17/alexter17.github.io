@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	<title>Wetter App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Wetter App</h1>
+		<input type="text" onfocus="this.value=''" id="cityInput" placeholder="Bitte Stadt eingeben...">
+		<button id="searchBtn" onclick="getWeatherCity(); getWeatherCityTime(); ClearInput();">Suche</button>
+		<button id="aktStnd" onclick="getLocation(); ClearInput();">Aktueller Standort</button>
+		<div>
+			<p id="city"></p>
+			<p id="temperature"></p>
+			<p id="feels"></p>
+			<p id="weather"></p>
+			<p id="humidity"></p>
+			<p id="wind-speed"></p>
+			<div  id="slider" class="slidecontainer">
+				<input type="range" min="0" max="39" value="0" class="slider" id="sliderRange">
+			</div>
+			<p id="time"></p>
+			<p id="temperatureTime"></p>
+			<p id="feelsTime"></p>
+			<p id="weatherTime"></p>
+			<p id="humidityTime"></p>
+			<p id="wind-speedTime"></p>
+			<br id="firstBr">
+			<p id="device"></p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
